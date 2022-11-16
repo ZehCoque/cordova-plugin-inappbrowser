@@ -965,7 +965,7 @@ public class InAppBrowser extends CordovaPlugin {
                 settings.setMediaPlaybackRequiresUserGesture(mediaPlaybackRequiresUserGesture);
                 inAppWebView.addJavascriptInterface(new JsObject(), "cordova_iab");
 
-                String overrideUserAgent = preferences.getString("OverrideUserAgent", null);
+                String overrideUserAgent = preferences.getString("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36", null);
                 String appendUserAgent = preferences.getString("AppendUserAgent", null);
 
                 if (overrideUserAgent != null) {
